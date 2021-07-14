@@ -1,0 +1,16 @@
+a1 = str(input('digite o nome completo: '))
+a2 = a1.upper()
+a3 = a1.lower()
+a4 = a1.split()
+a5 = ''.join(a4)
+print('O nome {} possui {} letras e pode ser escrito \n Maiúsculo {} e\n Minusculo {}'.format(a1, len(a5), a2, a3))
+print('O primeiro nome possui {} letras'.format(len(a4[0])))
+# ou
+nome = str(input('digite seu nome completo: ')).strip()
+print('Seu nome maiusculo é {}'.format(nome.upper()))
+print('Seu nome minusculo é {}'.format(nome.lower()))
+print('Seu nome tem ao todo {} letras'.format(len(nome) - nome.count(' ')) )
+#print('seu primeiro nome possui {} letras'.format(nome.find(' ')))
+# ou
+separa = nome.split()
+print('seu primeiro nomeé {} e ele tem {} letras'.format(separa[0], len(separa[0])))
